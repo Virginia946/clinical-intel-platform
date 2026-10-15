@@ -1,0 +1,21 @@
+[build-system]
+requires = ["setuptools>=68"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "clinical-intel-platform"
+version = "0.1.0"
+requires-python = ">=3.11"
+dependencies = [
+  "requests", "tenacity", "pandas", "pyarrow", "python-dotenv",
+  "boto3", "msal",
+  "snowflake-connector-python[pandas]",
+  "dbt-snowflake", "dbt-duckdb", "duckdb",
+  "dagster", "dagster-webserver", "dagster-dbt",
+]
+
+[project.optional-dependencies]
+dev = ["pytest", "responses", "moto[s3]", "ruff"]
+
+[tool.setuptools]
+packages = ["ingestion", "orchestration"]

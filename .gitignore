@@ -1,0 +1,8 @@
+.venv/
+.env
+keys/
+data/
+__pycache__/
+*.duckdb
+dbt/clinical/target/
+dbt/clinical/logs/
