@@ -28,3 +28,15 @@ python -m pip cache purge          # free pip cache
 ## Git
 git status
 git add -A && git commit -m "message"
+# Undo the last commit locally (keeps your work in the files)
+git reset --soft HEAD~1
+
+# Force-push to overwrite GitHub history
+git push origin <branch-name> --force-with-lease
+
+# show current branch
+git branch --show-current
+
+
+# bash #show any mistake in files name 
+ls scripts | cat -e 
