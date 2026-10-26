@@ -40,3 +40,10 @@ git branch --show-current
 
 # bash #show any mistake in files name 
 ls scripts | cat -e 
+
+## Snowflake 
+# generate security key 
+openssl genrsa 2048 | openssl pkcs8 -topk8 -inform PEM -out keys/rsa_key.p8 -nocrypt
+
+# generate public key 
+openssl rsa -in keys/rsa_key.p8 -pubout -out keys/rsa_key.pub
