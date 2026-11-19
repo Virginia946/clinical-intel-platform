@@ -1,13 +1,8 @@
 # Clinical Intelligence Platform
 
-A data and AI platform for a fictional hospital, built entirely on synthetic and public data.
+"The goal of this project is to showcase how data residing in hospital systems is handled. In a real-world scenario, this data would already exist, but here it is synthetic. The platform is designed to support downstream analysis and to serve as the foundation for an AI-driven data solution. The idea is simple: clean the data, then use AI to retrieve information with just a few prompts. This will be covered in the LLM section."
 
-The goal is to show the full path a healthcare AI system takes in practice: pulling data
-out of separate hospital systems, landing it in a tested warehouse, and then building
-machine learning models and LLM services on top of it.
 
-> **Status: v0.1 in progress.** Local infrastructure is running and synthetic patients
-> are loaded into the FHIR server. Connectors, warehouse and dbt models are next.
 
 ## Architecture (v0.1 target)
 
